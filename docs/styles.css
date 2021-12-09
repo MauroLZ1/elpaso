@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background-image: url(steak1.jpeg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(130, 98, 78, .3);
+    width: 100%;
+    height: 160px;
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 11;
+}
+
+.logo {
+    justify-self: center;
+}
+
+.contact {
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    justify-self: right;
+    text-decoration: none;
+    background-color: white;
+}
+
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    background: white;
+    color: #51321B;
+    font-size: 1.5em;
+    z-index: 9;
+    border: 2px solid black;
+    box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
+    -webkit-box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero-heading {
+    font-size: 70px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.hero-description {
+    margin-bottom: 24px;
+    font-size: 35px;
+    color: white;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: unset;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-heading {
+        font-size: 60px;
+    }
+
+    .hero-description {
+        font-size: 40px;
+    }
+}
+
+.main-btn {
+    font-size: 1.4rem;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.75);
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-decoration: none;
+}
+
+
+.main-btn:hover {
+    color: #fff;
+}
+
+.main-btn:hover:after {
+    width: 100%;
+}
